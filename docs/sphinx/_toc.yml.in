@@ -14,18 +14,15 @@ subtrees:
 
 - caption: How to
   entries:
-  - file: how-to/index.rst
-    title: Use ROCm for Data Science
-    subtrees:
     - entries:
       - file: how-to/use_hipDF.rst
-        title: hipDF
+        title: Use hipDF
       - file: how-to/use_hipGraph.rst
-        title: hipGraph
+        title: Use hipGraph
       - file: how-to/use_hipMM.rst
-        title: hipMM
+        title: Use hipMM
       - file: how-to/use_hipRAFT.rst
-        title: hipRAFT
+        title: Use hipRAFT
 
 - caption: Conceptual
   entries:
