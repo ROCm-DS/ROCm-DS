@@ -1,0 +1,37 @@
+root: index.md
+subtrees:
+- entries:
+  - file: what-is-rocmds.rst
+  - file: about/release-notes.md
+    title: Release notes
+  - file: compatibility/compatibility-matrix.rst
+    title: Compatibility matrix
+    entries:
+    - url: https://rocm.docs.amd.com/projects/install-on-linux/en/${branch}/reference/system-requirements.html
+      title: Linux system requirements
+    - url: https://rocm.docs.amd.com/projects/install-on-windows/en/${branch}/reference/system-requirements.html
+      title: Windows system requirements
+
+- caption: How to
+  entries:
+  - file: how-to/index.rst
+    title: Use ROCm for Data Science
+    subtrees:
+    - entries:
+      - file: how-to/use_hipDF.rst
+        title: hipDF
+      - file: how-to/use_hipGraph.rst
+        title: hipGraph
+      - file: how-to/use_hipMM.rst
+        title: hipMM
+      - file: how-to/use_hipRAFT.rst
+        title: hipRAFT
+
+- caption: Conceptual
+  entries:
+  - file: conceptual/data_exploration.rst
+    title: Data Exploration
+  - file: conceptual/data_processing.rst
+    title: Data Processing
+  - file: conceptual/data_modeling.rst
+    title: Data Modeling
