@@ -1,4 +1,4 @@
-# AMD ROCm for Data Science
+# AMD ROCm-DS
 
 ROCm™ is an open-source software platform that enables high-performance computing and machine learning applications. It features the ability to accelerate training, fine-tuning, and inference for data science models. With ROCm, you can access the full power of AMD GPUs, which can significantly improve the performance, productivity, and computation of data science models.
 
