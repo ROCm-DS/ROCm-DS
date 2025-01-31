@@ -14,24 +14,20 @@ subtrees:
 
 - caption: How to
   entries:
-  - file: how-to/index.rst
-    title: Use ROCm for Data Science
-    subtrees:
-    - entries:
-      - file: how-to/use_hipDF.rst
-        title: hipDF
-      - file: how-to/use_hipGraph.rst
-        title: hipGraph
-      - file: how-to/use_hipMM.rst
-        title: hipMM
-      - file: how-to/use_hipRAFT.rst
-        title: hipRAFT
+  - file: how-to/use_hipDF.rst
+    title: Use hipDF
+  - file: how-to/use_hipGraph.rst
+    title: Use hipGraph
+  - file: how-to/use_hipMM.rst
+    title: Use hipMM
+  - file: how-to/use_hipRAFT.rst
+    title: Use hipRAFT
 
 - caption: Conceptual
   entries:
   - file: conceptual/data_exploration.rst
-    title: Data Exploration
+    title: Data exploration
   - file: conceptual/data_processing.rst
-    title: Data Processing
+    title: Data processing
   - file: conceptual/data_modeling.rst
-    title: Data Modeling
+    title: Data modeling
