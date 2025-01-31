@@ -2,7 +2,7 @@ root: index.md
 subtrees:
 - entries:
   - file: what-is-rocmds.rst
-  - file: about/release-notes.md
+  - file: RELEASE.md
     title: Release notes
   - file: compatibility/compatibility-matrix.rst
     title: Compatibility matrix
