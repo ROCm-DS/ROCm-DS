@@ -80,24 +80,24 @@ Click {fab}`github` to go to the component's source code on GitHub.
             <tr>
                 <th rowspan="9">Packages</th>
                 <th rowspan="9">Data Science</th>
-                <td><a href="https://rocm.docs.amd.com/projects/composable_kernel/en/docs-6.3.2/index.html">hipDF</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/HIP/en/docs-6.3.2/index.html">hipDF</a></td>
                 <td>0.1.0&nbsp;&Rightarrow;&nbsp;<a href="#hipdf-1-0-0">1.0.0</td>
-                <td><a href="https://github.com/ROCm/composable_kernel"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/ROCm/HIP/"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/AMDMIGraphX/en/docs-6.3.2/index.html">hipGraph</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/HIP/en/docs-6.3.2/index.html">hipGraph</a></td>
                 <td>1.0.0</td>
-                <td><a href="https://github.com/ROCm/AMDMIGraphX"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/ROCm/HIP/"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/MIOpen/en/docs-6.3.2/index.html">hipMM</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/HIP/en/docs-6.3.2/index.html">hipMM</a></td>
                 <td>1.0.0</td>
-                <td><a href="https://github.com/ROCm/MIOpen"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/ROCm/HIP/"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/MIVisionX/en/docs-6.3.2/index.html">HipRAFT</a></td>
+                <td><a href="https://rocm.docs.amd.com/projects/HIP/en/docs-6.3.2/index.html">hipRAFT</a></td>
                 <td>1.0.0</td>
-                <td><a href="https://github.com/ROCm/MIVisionX"><i class="fab fa-github fa-lg"></i></a></td>
+                <td><a href="https://github.com/ROCm/HIP/"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
         </tbody>
     </table>
