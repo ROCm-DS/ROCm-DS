@@ -12,21 +12,21 @@
 <!-- spellcheck-disable                                     -->
 # ROCm-DS 1.0.0 release notes
 
-The release notes provide a summary of notable changes since the previous ROCm release.
+The release notes provide a summary of notable changes since the previous ROCm-DS release.
 
 - [Release highlights](#release-highlights)
 
 - [Operating system and hardware support changes](#operating-system-and-hardware-support-changes)
 
-- [ROCm components versioning](#rocm-components)
+- [ROCm-DS components versioning](#rocm-ds-components)
 
 - [Detailed component changes](#detailed-component-changes)
 
-- [ROCm known issues](#rocm-ds-known-issues)
+- [ROCm-DS known issues](#rocm-ds-known-issues)
 
-- [ROCm resolved issues](#rocm-ds-resolved-issues)
+- [ROCm-DS resolved issues](#rocm-ds-resolved-issues)
 
-- [ROCm upcoming changes](#rocm-ds-upcoming-changes)
+- [ROCm-DS upcoming changes](#rocm-ds-upcoming-changes)
 
 ```{note}
 If you’re using Radeon™ PRO or Radeon GPUs in a workstation setting with a
@@ -38,11 +38,11 @@ documentation to verify compatibility and system requirements.
 The following are notable improvements in ROCm-DS 1.0.0. For changes to individual components, see
 [Detailed component changes](#detailed-component-changes).
 
-### ROCm documentation updates
+### ROCm-DS documentation updates
 
-ROCm documentation continues to be updated to provide clearer and more comprehensive guidance for a wider variety of user needs and use cases.
+ROCm-DS documentation continues to be updated to provide clearer and more comprehensive guidance for a wider variety of user needs and use cases.
 
-* Documentation about ROCm compatibility with deep learning frameworks has been added. These topics outline ROCm-enabled features for each deep learning framework, key ROCm libraries that can influence the capabilities, validated Docker image tags, and features supported across the available ROCm and framework versions. For more information, see:
+* Documentation about ROCm-DS compatibility with deep learning frameworks has been added. These topics outline ROCm-enabled features for each deep learning framework, key ROCm libraries that can influence the capabilities, validated Docker image tags, and features supported across the available ROCm and framework versions. For more information, see:
 
     * [PyTorch compatibility](https://rocm.docs.amd.com/en/latest/compatibility/ml-compatibility/pytorch-compatibility.html)
 
@@ -52,13 +52,13 @@ ROCm documentation continues to be updated to provide clearer and more comprehen
 
 ## Operating system and hardware support changes
 
-ROCm-DS 6.3.2 adds support for Azure Linux 3.0 (kernel: 6.6). Azure Linux is supported only on AMD Instinct accelerators. For more information, see [Azure Linux installation](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/quick-start.html).
+ROCm-DS 1.0.0 adds support for Azure Linux 3.0 (kernel: 6.6). Azure Linux is supported only on AMD Instinct accelerators. For more information, see [Azure Linux installation](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/quick-start.html).
 
 
-## ROCm components
+## ROCm-DS components
 
-The following table lists the versions of ROCm components for ROCm 6.3.2, including any version
-changes from 6.3.1 to 6.3.2. Click the component's updated version to go to a list of its changes.
+The following table lists the versions of ROCm-DS components for ROCm-DS 1.0.0, including any version
+changes to 1.0.0. Click the component's updated version to go to a list of its changes.
 Click {fab}`github` to go to the component's source code on GitHub.
 
 <div class="pst-scrollable-table-container">
@@ -81,7 +81,7 @@ Click {fab}`github` to go to the component's source code on GitHub.
                 <th rowspan="9">Packages</th>
                 <th rowspan="9">Data Science</th>
                 <td><a href="https://rocm.docs.amd.com/projects/composable_kernel/en/docs-6.3.2/index.html">hipDF</a></td>
-                <td>0.1.0&nbsp;&Rightarrow;&nbsp;<a href="##hipDF-1-0-0">1.0.0</td>
+                <td>0.1.0&nbsp;&Rightarrow;&nbsp;<a href="#hipdf-1-0-0">1.0.0</td>
                 <td><a href="https://github.com/ROCm/composable_kernel"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
             <tr>
@@ -115,31 +115,24 @@ The following sections describe key changes to ROCm-DS components.
     - Adds an atomic counter to track the outstanding HSA handlers.
     - Waits on CPU for the callbacks if the number exceeds the defined value.
 * Codes to capture Architected Queueing Language (AQL) packets for HIP graph memory copy node between host and device. HIP enqueues AQL packets during graph launch.
-* Control to use system pool implementation in runtime commands handling. By default, it is disabled.
-* A new path to avoid `WaitAny` calls in `AsyncEventsLoop`. The new path is selected by default.
-* Runtime control on decrement counter only if the event is popped. There is a new way to restore dead signals cleanup for the old path.
-* A new logic in runtime to track the age of events from the kernel mode driver.
 
 #### Optimized
 
 * HSA callback performance. The HIP runtime creates and submits commands in the queue and interacts with HSA through a callback function. HIP waits for the CPU status from HSA to optimize the handling of events, profiling, commands, and HSA signals for higher performance.
-* Runtime optimization which combines all logic of `WaitAny` in a single processing loop and avoids extra memory allocations or reference counting. The runtime won't spin on the CPU if all events are busy.
-* Multi-threaded dispatches for performance improvement.
-* Command submissions and processing between CPU and GPU by introducing a way to limit the software batch size.
-* Switch to `std::shared_mutex` in book/keep logic in streams from multiple threads simultaneously, for performance improvement in specific customer applications.
-* `std::shared_mutex` is used in memory object mapping, for performance improvement.
 
 #### Resolved issues
 
 * Race condition in multi-threaded producer/consumer scenario with `hipMallocFromPoolAsync`.
-* Segmentation fault with `hipStreamLegacy` while using the API `hipStreamWaitEvent`.
-* Usage of `hipStreamLegacy` in HIP event record.
-* A soft hang in graph execution process from HIP user object. The fix handles the release of graph execution object properly considering synchronization on the device/stream. The user application now behaves the same with `hipUserObject` on both the AMD ROCm and NVIDIA CUDA platforms.
 
 ## ROCm-DS known issues
 
-ROCm known issues are noted on {fab}`github` [GitHub](https://github.com/ROCm/ROCm/labels/Verified%20Issue). For known
+ROCm-DS known issues are noted on {fab}`github` [GitHub](https://github.com/ROCm/ROCm/labels/Verified%20Issue). For known
 issues related to individual components, review the [Detailed component changes](#detailed-component-changes).
+
+### PCI Express Qualification Tool failure on Debian 12
+
+The PCI Express Qualification Tool (PEQT) module present in the ROCm Validation Suite (RVS) might fail due to the segmentation issue in Debian 12 (bookworm). This will result in failure to determine the characteristics of the PCIe interconnect between the host platform and the GPU like support for Gen 3 atomic completers, DMA transfer statistics, link speed, and link width. The standard PCIe command `lspci` can be used as an alternative to view the characteristics of the PCIe bus interconnect with the GPU. This issue is under investigation and will be addressed in a future release. See [GitHub issue #4175](https://github.com/ROCm/ROCm/issues/4175).
+
 
 ## ROCm-DS resolved issues
 
