@@ -16,7 +16,7 @@ copyright = "Copyright (c) 2025 Advanced Micro Devices, Inc. All rights reserved
 # Required settings
 html_theme = "rocm_docs_theme"
 html_theme_options = {
-    "flavor": "rocm-ds",
+    "flavor": "rocm",
     # Add any additional theme options here
 }
 extensions = ["rocm_docs"]
