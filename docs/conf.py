@@ -16,13 +16,7 @@ copyright = "Copyright (c) 2025 Advanced Micro Devices, Inc. All rights reserved
 # Required settings
 html_theme = "rocm_docs_theme"
 html_theme_options = {
-    "flavor": "rocm",
-    "link_main_doc": True,
-    "nav_secondary_items": {
-        "Community": "https://github.com/ROCm/ROCm/discussions",
-        "Blogs": "https://rocm.blogs.amd.com/",
-        "ROCm&#8482 docs": "https://rocm.docs.amd.com"
-    },
+    "flavor": "rocm-ds",
     # Add any additional theme options here
 }
 extensions = ["rocm_docs"]
