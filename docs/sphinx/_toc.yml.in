@@ -1,8 +1,7 @@
 root: index.md
 subtrees:
 - entries:
-  - file: what-is-rocmds.rst
-  - file: RELEASE.md
+  - file: about/release-notes.md
     title: Release notes
   - file: compatibility/compatibility-matrix.rst
     title: Compatibility matrix
@@ -12,22 +11,25 @@ subtrees:
     - url: https://rocm.docs.amd.com/projects/install-on-windows/en/${branch}/reference/system-requirements.html
       title: Windows system requirements
 
-- caption: How to
+- caption: Components
   entries:
-  - file: how-to/use_hipDF.rst
-    title: Use hipDF
-  - file: how-to/use_hipGraph.rst
-    title: Use hipGraph
-  - file: how-to/use_hipMM.rst
-    title: Use hipMM
-  - file: how-to/use_hipRAFT.rst
-    title: Use hipRAFT
+  - file: how-to/hipDF-index.rst
+    title: hipDF
+  - file: how-to/hipGRAPH-index.rst
+    title: hipGraph
+  - file: how-to/hipMM-index.rst
+    title: hipMM
+  - file: how-to/hipRAFT-index.rst
+    title: hipRAFT
 
-- caption: Conceptual
+- caption: Related content
   entries:
-  - file: conceptual/data_exploration.rst
-    title: Data exploration
-  - file: conceptual/data_processing.rst
-    title: Data processing
-  - file: conceptual/data_modeling.rst
-    title: Data modeling
+  - url: https://github.com/ROCm/rocm-blogs-internal/tree/ffloresy/cuDF_pandas_accelerated
+    title: hipDF Pandas Accelerated
+  - url: https://github.com/ROCm/rocm-blogs-internal/tree/ffloresy/cupy_cudf_portfolio_opt
+    title: cuPY and cuDF Portfolio Options
+
+- caption: About
+  entries:
+  - file: about/license.md
+    title: Licenses

@@ -7,37 +7,32 @@ myst:
 
 # AMD ROCm-DS
 
-ROCm™-DS is an open-source software platform that enables high-performance computing and machine learning applications. It features the ability to accelerate training, fine-tuning, and inference for data science models. With ROCm, you can access the full power of AMD GPUs, which can significantly improve the performance, productivity, and computation of data science models.
+The ROCm Data Science toolkit (or ROCm™-DS) is an open-source software platform for high-performance computing and machine learning applications that features the ability to accelerate training, fine-tuning, and inference for data science models on AMD GPUs. You can use ROCm-DS to perform distributed training, which enables you to train models across multiple GPUs or nodes simultaneously. Additionally, ROCm-DS supports mixed-precision training, which can help reduce the memory and compute requirements of training workloads. For fine-tuning, ROCm-DS provides access to various algorithms and optimization techniques. In terms of inference, ROCm-DS provides several techniques that can help you optimize your models for deployment, such as quantization, GEMM tuning, and optimization with composable kernel. 
 
-You can use ROCm-DS to perform distributed training, which enables you to train models across multiple GPUs or nodes simultaneously. Additionally, ROCM-DS supports mixed-precision training, which can help reduce the memory and compute requirements of training workloads. For fine-tuning, ROCM-DS provides access to various algorithms and optimization techniques. In terms of inference, ROCM-DS provides several techniques that can help you optimize your models for deployment, such as quantization, GEMM tuning, and optimization with composable kernel.
+The available libraries in ROCm-DS provide a complete workflow for data science acceleration on GPUs, replacing the use of common Python-based tools such as Pandas for data manipulation and analysis, or NetworkX for the creation and review of complex networks. The hipDF and hipGRAPH libraries in the early access release provide these capabilities for acceleration on AMD GPUs. The hipMM and hipRAFT libraries provide supporting functions for memory management, and vector and matrix operations to simplify coding for high performance GPU-based applications. 
 
-Overall, ROCM-DS can be used to improve the performance and efficiency of your data science models. With its training, fine-tuning, and inference support, ROCM-DS provides a complete solution for optimizing data science workflows and achieving the optimum results possible on AMD GPUs.
-
-The ROCM-DS for Data Science Developer Hub contains AMD ROCM-DS tutorials for training, fine-tuning, and inference. ROCM-DS supports programming models, such as OpenMP and OpenCL, and includes all necessary open
-source software compilers, debuggers, and libraries. ROCM-DS is fully integrated into machine learning
-(ML) frameworks, such as PyTorch and TensorFlow.
+How is ROCm-DS different from the more traditional ROCm libraries, which are a requirement of ROCm-DS in any case? The answer to this question is in the reference material provided below. ROCm-DS is an open source project found at [https://github.com/ROCm/ROCm-DS](https://github.com/ROCm/ROCm-DS).
 
 ::::{grid} 1 2 2 2
 :gutter: 3
 :class-container: rocm-doc-grid
 
-
-:::{grid-item-card} How to
+:::{grid-item-card} Components
 :class-body: rocm-card-banner rocm-hue-12
 
-* [Use hipDF](./how-to/use_hipDF.rst)
-* [Use hipGraph](./how-to/use_hipGraph.rst)
-* [Use hipMM](./how-to/use_hipMM.rst)
-* [Use hipRAFT](./how-to/use_hipRAFT.rst)
+* [hipDF](./how-to/hipDF-index.rst), "Create Data frames in Pandas-like library"
+* [hipGraph](./how-to/hipGRAPH-index.rst), "Graph inference and analysis of data models"
+* [hipMM](./how-to/hipMM-index.rst), "Memory Management features"
+* [hipRAFT](./how-to/hipRAFT-index.rst), "Vector and Matrix analysis"
 
 :::
 
-:::{grid-item-card} Conceptual
+:::{grid-item-card} Related Content
 :class-body: rocm-card-banner rocm-hue-8
 
-* [Data exploration](./conceptual/data_exploration.rst)
-* [Data processing](./conceptual/data_processing.rst)
-* [Data modeling](./conceptual/data_modeling.rst)
+* [hipDF Pandas Accelerated](https://github.com/ROCm/rocm-blogs-internal/tree/ffloresy/cuDF_pandas_accelerated)
+* [cuPY and cuDF Portfolio Options](https://github.com/ROCm/rocm-blogs-internal/tree/ffloresy/cupy_cudf_portfolio_opt)
+
 :::
 
 ::::
