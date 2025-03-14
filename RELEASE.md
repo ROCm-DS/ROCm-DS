@@ -10,50 +10,17 @@
 <!-- markdownlint-disable reference-links-images            -->
 <!-- markdownlint-disable no-missing-space-atx              -->
 <!-- spellcheck-disable                                     -->
-# ROCm-DS 2025.03 Release notes
+# ROCm-DS 25.03 Release notes
 
 The release notes provide a summary of notable changes since the previous ROCm release.
 
-- [Release highlights](#release-highlights)
-
-- [Operating system and hardware support changes](#operating-system-and-hardware-support-changes)
-
-- [ROCm components versioning](#rocm-components)
-
+- [ROCm-DS Release highlights](#release-highlights)
 - [Detailed component changes](#detailed-component-changes)
 
-- [ROCm known issues](#rocm-known-issues)
-
-- [ROCm resolved issues](#rocm-resolved-issues)
-
-- [ROCm upcoming changes](#rocm-upcoming-changes)
-
-```{note}
-If you’re using Radeon™ PRO or Radeon GPUs in a workstation setting with a
-display connected, continue to use ROCm 6.2.3. See the [Use ROCm on Radeon GPUs](https://rocm.docs.amd.com/projects/radeon/en/latest/index.html)
-documentation to verify compatibility and system requirements.
-```
 ## Release highlights
 
 The following are notable improvements in ROCm-DS 1.0.0. For changes to individual components, see
 [Detailed component changes](#detailed-component-changes).
-
-### ROCm documentation updates
-
-ROCm documentation continues to be updated to provide clearer and more comprehensive guidance for a wider variety of user needs and use cases.
-
-* Documentation about ROCm compatibility with deep learning frameworks has been added. These topics outline ROCm-enabled features for each deep learning framework, key ROCm libraries that can influence the capabilities, validated Docker image tags, and features supported across the available ROCm and framework versions. For more information, see:
-
-    * [PyTorch compatibility](https://rocm.docs.amd.com/en/latest/compatibility/ml-compatibility/pytorch-compatibility.html)
-
-    * [TensorFlow compatibility](https://rocm.docs.amd.com/en/latest/compatibility/ml-compatibility/tensorflow-compatibility.html)
-
-    * [JAX compatibility](https://rocm.docs.amd.com/en/latest/compatibility/ml-compatibility/jax-compatibility.html)
-
-## Operating system and hardware support changes
-
-ROCm-DS 6.3.2 adds support for Azure Linux 3.0 (kernel: 6.6). Azure Linux is supported only on AMD Instinct accelerators. For more information, see [Azure Linux installation](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/quick-start.html).
-
 
 ## ROCm-DS components
 

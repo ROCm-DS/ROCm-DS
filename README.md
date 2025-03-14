@@ -1,12 +1,11 @@
 # AMD ROCm-DS
 
-ROCm™ is an open-source software platform that enables high-performance computing and machine learning applications. It features the ability to accelerate training, fine-tuning, and inference for data science models. With ROCm, you can access the full power of AMD GPUs, which can significantly improve the performance, productivity, and computation of data science models.
+> [!NOTE]
+> ROCm-DS is in an *early access* state. Running production workloads is *not* recommended.
+***
 
-You can use ROCm to perform distributed training, which enables you to train models across multiple GPUs or nodes simultaneously. Additionally, ROCm supports mixed-precision training, which can help reduce the memory and compute requirements of training workloads. For fine-tuning, ROCm provides access to various algorithms and optimization techniques. In terms of inference, ROCm provides several techniques that can help you optimize your models for deployment, such as quantization, GEMM tuning, and optimization with composable kernel.
+ROCm-DS is an open-source software toolkit built on the ROCm™ platform, enabling high-performance data science and data processing workloads. The acceleration offered through ROCm-DS allows you to process larger datasets and execute more complex workloads in a timely manner. With ROCm-DS, you can access the full power of AMD GPUs, which can significantly improve the performance, productivity, and computational capabilities of data science workloads.
 
-Overall, ROCm can be used to improve the performance and efficiency of your data science models. With its training, fine-tuning, and inference support, ROCm provides a complete solution for optimizing data science workflows and achieving the optimum results possible on AMD GPUs.
+This early access release of ROCm-DS contains the necessary tools to build a complete, accelerated data science workflow on AMD GPUs. Tap into the acceleration offered by AMD GPUs and improve your existing Pandas projects or create a new data processing application from scratch with [hipDF](https://github.com/ROCm-DS/hipDF), a Data Frame library for data loading and manipulation. Build, analyze, and manipulate complex networks using [hipGraph](https://github.com/ROCm-DS/hipGRAPH), a library containing a collection of GPU-accelerated graph processing algorithms.
 
-The ROCm for Data Science Developer Hub contains AMD ROCm tutorials for training, fine-tuning, and inference. ROCm supports programming models, such as OpenMP and OpenCL, and includes all necessary open
-source software compilers, debuggers, and libraries. ROCm is fully integrated into machine learning
-(ML) frameworks, such as PyTorch and TensorFlow.
-
+Overall, ROCm-DS can be used to improve the performance and efficiency of your data science workloads. With its continually expanding support for data science operations and algorithms, ROCm-DS provides a complete solution for optimizing data science workflows and achieving the optimum results possible on AMD GPUs. The ROCm-DS toolkit is under active development and will continue to be expanded, improved upon, and optimized to help you build powerful data processing and analysis applications to achieve your goals.

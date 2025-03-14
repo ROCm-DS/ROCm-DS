@@ -7,23 +7,29 @@ myst:
 
 # AMD ROCm-DS
 
-The ROCm Data Science toolkit (or ROCm™-DS) is an open-source software platform for high-performance computing and machine learning applications that features the ability to accelerate training, fine-tuning, and inference for data science models on AMD GPUs. You can use ROCm-DS to perform distributed training, which enables you to train models across multiple GPUs or nodes simultaneously. Additionally, ROCm-DS supports mixed-precision training, which can help reduce the memory and compute requirements of training workloads. For fine-tuning, ROCm-DS provides access to various algorithms and optimization techniques. In terms of inference, ROCm-DS provides several techniques that can help you optimize your models for deployment, such as quantization, GEMM tuning, and optimization with composable kernel. 
+The ROCm Data Science toolkit (or ROCm-DS) is an open-source software collection for high-performance data science applications built on the core ROCm platform. ROCm-DS is a fork of the RAPIDS open source project from NVIDIA and enables users to accelerate their data processing and analysis workloads on AMD GPUs. You can leverage ROCm-DS to accelerate both new and existing data science workloads, allowing you to execute intensive applications with larger datasets at lightning speed. ROCm-DS enables the creation of scalable solutions addressing the pressing needs of today's data-driven landscape. With ROCm-DS you can build pre- and post-processing applications for your AI models, create new big data processing workloads, or accelerate your existing data science pipelines with minimal effort.
 
-The available libraries in ROCm-DS provide a complete workflow for data science acceleration on GPUs, replacing the use of common Python-based tools such as Pandas for data manipulation and analysis, or NetworkX for the creation and review of complex networks. The hipDF and hipGRAPH libraries in the early access release provide these capabilities for acceleration on AMD GPUs. The hipMM and hipRAFT libraries provide supporting functions for memory management, and vector and matrix operations to simplify coding for high performance GPU-based applications. 
+The available libraries in ROCm-DS provide you with the tools to build a complete workflow for data science acceleration on AMD GPUs. hipDF enables you to create data frames and execute GPU accelerated operations on them. It even includes the ability to accelerate many existing Pandas workflows with minimal effort and no code changes. hipGraph can be used to create, analyze, and review complex networks. Both the hipDF and hipGraph libraries in the early access release provide these capabilities for acceleration on AMD Instinct GPUs, with hipMM providing supporting functions for the memory management of these high performance GPU-based applications. 
 
-How is ROCm-DS different from the more traditional ROCm libraries, which are a requirement of ROCm-DS in any case? The answer to this question is in the reference material provided below. ROCm-DS is an open source project found at [https://github.com/ROCm/ROCm-DS](https://github.com/ROCm/ROCm-DS).
+ROCm-DS is an open source project found at [https://github.com/ROCm-DS](https://github.com/ROCm-DS).
 
 ::::{grid} 1 2 2 2
 :gutter: 3
 :class-container: rocm-doc-grid
 
+:::{grid-item-card} Installation
+:class-body: rocm-card-banner rocm-hue-2
+
+* [Release Compatibility](./compatibility/compatibility.rst)
+
+:::
+
 :::{grid-item-card} Components
 :class-body: rocm-card-banner rocm-hue-12
 
-* [hipDF](./how-to/hipDF-index.rst), "Create Data frames in Pandas-like library"
-* [hipGraph](./how-to/hipGRAPH-index.rst), "Graph inference and analysis of data models"
-* [hipMM](./how-to/hipMM-index.rst), "Memory Management features"
-* [hipRAFT](./how-to/hipRAFT-index.rst), "Vector and Matrix analysis"
+* [hipDF](./how-to/hipDF-index.rst)
+* [hipGraph](./how-to/hipGRAPH-index.rst)
+* [hipMM](./how-to/hipMM-index.rst)
 
 :::
 
@@ -34,5 +40,4 @@ How is ROCm-DS different from the more traditional ROCm libraries, which are a r
 * [cuPY and cuDF Portfolio Options](https://github.com/ROCm/rocm-blogs-internal/tree/ffloresy/cupy_cudf_portfolio_opt)
 
 :::
-
 ::::
