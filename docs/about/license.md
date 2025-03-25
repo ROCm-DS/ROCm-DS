@@ -4,13 +4,13 @@
   <meta name="keywords" content="license, licensing terms">
 </head>
 
-# ROCm license
+# ROCm-DS license
 
 ```{include} ../../LICENSE
 ```
 
 :::{note}
-The preceding license applies to the [ROCm-DS repository](https://github.com/ROCm/ROCm-DS), which
+The preceding license applies to the [ROCm-DS repository](https://github.com/ROCm-DS/ROCm-DS), which
 primarily contains documentation. For licenses related to specific ROCm-DS components, refer to the
 following section.
 :::

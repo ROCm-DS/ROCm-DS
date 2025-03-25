@@ -3,19 +3,15 @@ subtrees:
 - entries:
   - file: about/release-notes.md
     title: Release notes
+
+- caption: Install
+  entries:
   - file: compatibility/compatibility.rst
     title: Release compatibility
-
-- caption: Components
-  entries:
-  - file: how-to/hipDF-index.rst
-    title: hipDF
-  - file: how-to/hipGRAPH-index.rst
-    title: hipGraph
-  - file: how-to/hipMM-index.rst
-    title: hipMM
-  - file: how-to/hipRAFT-index.rst
-    title: hipRAFT
+  - url: https://github.com/ROCm/rocm-blogs-internal/tree/ffloresy/cuDF_pandas_accelerated
+    title: hipDF Installation instructions
+  - url: https://github.com/ROCm/rocm-blogs-internal/tree/ffloresy/cupy_cudf_portfolio_opt
+    title: hipGRAPH Installation instructions
 
 - caption: Related content
   entries:
