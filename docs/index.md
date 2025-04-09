@@ -1,8 +1,8 @@
 ---
 myst:
   html_meta:
-    "description": "Learn about the features, capabilities, and ways to ROCm for Data Science"
-    "keywords": "Data Science, GPU, how to, conceptual"
+    "description": "Learn about the features and capabilities of ROCm for Data Science (ROCm-DS)"
+    "keywords": "Data-analytics, RAPIDS, cuDF, cuGraph, RMM, hipDF, hipGraph, hipMM, Pandas, NetworkX, High-Performance Computing, GPU Acceleration, GPU Computing, Parallel Computing, Scalable Data Science, Python"
 ---
 
 # AMD ROCm-DS
@@ -38,8 +38,8 @@ ROCm-DS is an open source project found at [https://github.com/ROCm-DS](https://
 :::{grid-item-card} Related Content
 :class-body: rocm-card-banner rocm-hue-8
 
-* [hipDF Pandas Accelerated](https://github.com/ROCm/rocm-blogs-internal/tree/ffloresy/cuDF_pandas_accelerated)
-* [cuPY and cuDF Portfolio Options](https://github.com/ROCm/rocm-blogs-internal/tree/ffloresy/cupy_cudf_portfolio_opt)
+* [hipDF Pandas Accelerated](https://rocm.blogs.amd.com/artificial-intelligence/hipDF_pandas_accelerated/README.html)
+* [cuPY and hipDF Portfolio Options](https://rocm.blogs.amd.com/artificial-intelligence/cupy_hipdf_portfolio_opt/README.html)
 
 :::
 ::::
