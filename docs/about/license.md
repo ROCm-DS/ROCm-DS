@@ -1,8 +1,9 @@
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="ROCm-DS licensing terms">
-  <meta name="keywords" content="license, licensing terms">
-</head>
+---
+myst:
+  html_meta:
+    "description": "Learn about the features and capabilities of ROCm for Data Science (ROCm-DS)"
+    "keywords": "Data-analytics, RAPIDS, cuDF, cuGraph, RMM, hipDF, hipGraph, hipMM, Pandas, NetworkX, High-Performance Computing, GPU Acceleration, GPU Computing, Parallel Computing, Scalable Data Science, Python"
+---
 
 # ROCm-DS license
 
@@ -26,13 +27,12 @@ licenses. Please review individual repositories for more information.
 | Component | License |
 |:---------------------|:-------------------------|
 | [hipDF](https://github.com/ROCm-DS/hipDF) | [Apache 2.0](https://github.com/ROCm/clr/blob/amd-staging/LICENCE) |
-| [hipGRAPH](https://github.com/ROCm-DS/hipGRAPH) | [MIT](https://github.com/ROCm/amdsmi/blob/amd-staging/LICENSE) |
 | [hipMM](https://github.com/ROCm-DS/hipMM/) | [Apache 2.0](https://github.com/ROCm/aomp/blob/aomp-dev/LICENSE) |
-| [hipRAFT](https://github.com/ROCm-DS/hipRAFT/) | [Apache 2.0](https://github.com/ROCm/aomp-extras/blob/aomp-dev/LICENSE) |
+| [hipGRAPH](https://github.com/ROCm-DS/hipGRAPH) | [MIT](https://github.com/ROCm/amdsmi/blob/amd-staging/LICENSE) |
 | [rocGRAPH](https://github.com/ROCm-DS/rocGRAPH) | [MIT](https://github.com/ROCm/llvm-project/blob/amd-staging/amd/comgr/LICENSE.txt) |
 
 ```{note}
-The following additional terms and conditions apply to your use of ROCm technical documentation.
+The following additional terms and conditions apply to your use of ROCm-DS documentation.
 ```
 
 ©2025 Advanced Micro Devices, Inc. All rights reserved.

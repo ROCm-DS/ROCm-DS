@@ -12,30 +12,30 @@
 <!-- spellcheck-disable                                     -->
 # ROCm-DS 25.03 Release notes
 
-The release notes provide a summary of notable changes since the previous ROCm release.
+The release notes provide a summary of notable changes since the previous ROCm-DS release.
 
 - [ROCm-DS Release highlights](#release-highlights)
-- [Detailed component changes](#detailed-component-changes)
+- [ROCm-DS components](#rocm-ds-components)
+- [Known issues](#known-issues)
 
 ## Release highlights
 
-The following are notable improvements in ROCm-DS 1.0.0. For changes to individual components, see
-[Detailed component changes](#detailed-component-changes).
+The following are notable improvements in ROCm-DS 25.03:
+
+Text goes here....
 
 ## ROCm-DS components
 
 The following table lists the versions of ROCm-DS components for the current release. 
-Click {fab}`github` to go to the component's source code on GitHub.
+Click the component name to go to the component's source code on GitHub.
 
 <div class="pst-scrollable-table-container">
     <table id="rocm-rn-components" class="table">
         <thead>
             <tr>
                 <th>Category</th>
-                <th>Group</th>
                 <th>Name</th>
                 <th>Version</th>
-                <th></th>
             </tr>
         </thead>
         <colgroup>
@@ -44,72 +44,22 @@ Click {fab}`github` to go to the component's source code on GitHub.
         </colgroup>
         <tbody class="rocm-components-libs rocm-components-ml">
             <tr>
-                <th rowspan="9">Packages</th>
-                <th rowspan="9">Data Science</th>
-                <td><a href="https://rocm.docs.amd.com/projects/composable_kernel/en/docs-6.3.2/index.html">hipDF</a></td>
-                <td>0.1.0&nbsp;&Rightarrow;&nbsp;<a href="##hipDF-1-0-0b1">1.0.0b1</td>
-                <td><a href="https://github.com/ROCm/composable_kernel"><i class="fab fa-github fa-lg"></i></a></td>
+                <th rowspan="9">Components</th>
+                <td><a href="https://github.com/ROCm-DS/hipDF">hipDF</a></td>
+                <td>1.0.0b1</td>
             </tr>
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/AMDMIGraphX/en/docs-6.3.2/index.html">hipGraph</a></td>
+                <td><a href="https://github.com/ROCm-DS/hipMM">hipMM</a></td>
                 <td>1.0.0b1</td>
-                <td><a href="https://github.com/ROCm/AMDMIGraphX"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
             <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/MIOpen/en/docs-6.3.2/index.html">hipMM</a></td>
+                <td><a href="https://github.com/ROCm-DS/hipGRAPH">hipGraph</a></td>
                 <td>1.0.0b1</td>
-                <td><a href="https://github.com/ROCm/MIOpen"><i class="fab fa-github fa-lg"></i></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://rocm.docs.amd.com/projects/MIVisionX/en/docs-6.3.2/index.html">HipRAFT</a></td>
-                <td>1.0.0b1</td>
-                <td><a href="https://github.com/ROCm/MIVisionX"><i class="fab fa-github fa-lg"></i></a></td>
             </tr>
         </tbody>
     </table>
 </div>
 
-## Detailed component changes
+## Known issues
 
-The following sections describe key changes to ROCm-DS components.
-
-### **hipDF** (1.0.0b1)
-
-#### Added
-
-* Some new stuff.
-
-#### Known issues
-
-* XXX for performance improvement.
-
-### **hipMM** (1.0.0b1)
-
-#### Added
-
-* Some new stuff.
-
-#### Known issues
-
-* XXX for performance improvement.
-
-### **hipGRAPH** (1.0.0b1)
-
-#### Added
-
-* Some new stuff.
-
-#### Known issues
-
-* XXX for performance improvement.
-
-### **hipRAFT** (1.0.0b1)
-
-#### Added
-
-* Some new stuff.
-
-#### Known issues
-
-* XXX for performance improvement.
-
+Text goes here....
