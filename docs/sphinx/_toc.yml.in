@@ -15,7 +15,7 @@ subtrees:
   entries: 
   - url: https://rocm.docs.amd.com/projects/hipDF-internal/en/latest/
     title: hipDF
-  - url: https://rocm.docs.amd.com/projects/hipMM-internal/
+  - url: https://rocm.docs.amd.com/projects/hipMM-internal/en/doc-edits/
     title: hipMM
   - url: https://advanced-micro-devices-demo--68.com.readthedocs.build/projects/hipGRAPH-internal/en/68/
     title: hipGRAPH

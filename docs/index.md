@@ -34,7 +34,7 @@ ROCm-DS documentation is organized into the following categories:
 :class-body: rocm-card-banner rocm-hue-12
 
 * [hipDF](https://rocm.docs.amd.com/projects/hipDF-internal/en/latest/)
-* [hipMM](https://rocm.docs.amd.com/projects/hipMM-internal/)
+* [hipMM](https://rocm.docs.amd.com/projects/hipMM-internal/en/doc-edits/)
 * [hipGraph](https://advanced-micro-devices-demo--68.com.readthedocs.build/projects/hipGRAPH-internal/en/68/)
 
 :::
