@@ -35,7 +35,7 @@ ROCm-DS documentation is organized into the following categories:
 
 * [hipDF](https://rocm.docs.amd.com/projects/hipDF-internal/en/latest/)
 * [hipMM](https://rocm.docs.amd.com/projects/hipMM-internal/)
-* [hipGraph](https://advanced-micro-devices-demo--66.com.readthedocs.build/projects/hipGRAPH-internal/en/66/)
+* [hipGraph](https://advanced-micro-devices-demo--68.com.readthedocs.build/projects/hipGRAPH-internal/en/68/)
 
 :::
 
