@@ -2,10 +2,10 @@
     :description: ROCm-DS release compatibility
     :keywords: Data-analytics, RAPIDS, cuDF, cuGraph, RMM, hipDF, hipGraph, hipMM, Pandas, NetworkX, High-Performance Computing, GPU Acceleration, GPU Computing, Parallel Computing, Scalable Data Science, Python
 
-.. _software-requirements:
+.. _system-requirements:
 
 **************************************************************************************
-Software requirements
+System requirements
 **************************************************************************************
 
 The following are the ROCm-DS release compatibilities and system requirements:

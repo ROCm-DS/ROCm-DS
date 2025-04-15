@@ -6,30 +6,28 @@ subtrees:
 
 - caption: Install
   entries:
-  - file: install/compatibility.rst
-    title: Software requirements
+  - file: install/requirements.rst
+    title: System requirements
   - file: install/install.rst
     title: Installation instructions
 
 - caption: Components
   entries: 
-  - url: https://ROCm-DS/hipDF/
+  - url: https://rocm.docs.amd.com/projects/hipDF-internal/en/latest/
     title: hipDF
-  - url: https://ROCm-DS/hipMM/
+  - url: https://rocm.docs.amd.com/projects/hipMM-internal/
     title: hipMM
   - url: https://advanced-micro-devices-demo--66.com.readthedocs.build/projects/hipGRAPH-internal/en/66/
     title: hipGRAPH
 
 - caption: Related content
   entries:
-  - url: https://instinct.docs.amd.com/latest/
+  - url: https://advanced-micro-devices-dcgpu-documentation--65.com.readthedocs.build/65/
     title: Instinct docs
-  - url: https://advanced-micro-devices-rocm-blogs--726.com.readthedocs.build/projects/internal/en/726/software-tools-optimization/introducing-rocm-ds:-revolutionizing-data-processing-with-amd-instinct-gpus/README.html
-    title: Introducing ROCm-DS
-  - url: https://advanced-micro-devices-rocm-blogs--324.com.readthedocs.build/projects/internal/en/324/artificial-intelligence/hipDF_pandas_accelerated/README.html
-    title: DataFrame Acceleration with hipDF
-  - url: https://advanced-micro-devices-rocm-blogs--167.com.readthedocs.build/projects/internal/en/167/artificial-intelligence/cupy_hipdf_portfolio_opt/README.html
-    title: CuPy and hipDF on AMD
+  - url: https://advanced-micro-devices-dcgpu-documentation--65.com.readthedocs.build/65/data-science/ROCmDS-Blogs.html
+    title: ROCm-DS blogs
+  - file: contribute/contributing.rst
+    title: Contributing to ROCm-DS
 
 - caption: About
   entries:

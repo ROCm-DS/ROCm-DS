@@ -10,7 +10,7 @@ Installation instructions
 
 In the Early Access (EA) release for ROCm-DS each component must be separately installed as needed. The installation instructions for the various components can be found as follows: 
 
-* hipDF Installation instructions
-* hipMM Installation instructions
+* `hipDF Installation instructions <https://rocm.docs.amd.com/projects/hipDF-internal/en/latest/install/INSTALL.html>`_
+* `hipMM Installation instructions <https://rocm.docs.amd.com/projects/hipMM-internal/en/doc-edits/install/INSTALL.html>`_
 * `hipGRAPH Installation instructions <https://advanced-micro-devices-demo--66.com.readthedocs.build/projects/hipGRAPH-internal/en/66/install/Linux_Install_Guide.html#linux-install>`_ 
 * `rocGRAPH Installation instructions <https://advanced-micro-devices-demo--135.com.readthedocs.build/projects/rocGraph-internal/en/135/install/Linux_Install_Guide.html#linux-install>`_
