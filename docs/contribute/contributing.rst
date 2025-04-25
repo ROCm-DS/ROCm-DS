@@ -85,13 +85,6 @@ To format a file, use:
   /opt/rocm/hcc/bin/clang-format -style=file -i <path-to-source-file>
 
 
-To format all files, run the following script in rocGRAPH directory:
-
-.. code:: bash
-
-  #!/bin/bash
-  git ls-files -z *.cc *.cpp *.h *.hpp *.cl *.h.in *.hpp.in *.cpp.in | xargs -0 /opt/rocm/hcc/bin/clang-format  -style=file -i
-
 Also, githooks can be installed to format the code per-commit:
 
 .. code:: bash
@@ -150,14 +143,7 @@ This typically involves adding the following files:
 
 3. When modifying an existing routine, add appropriate testing to ``test_<routine_name>.yaml`` file in directory ``clients/tests/``.
 
-4. Tests must have good code coverage. For example, at a minimum rocGRAPH supports the following data/compute formats:
-
-    * ``float``
-    * ``double``
-    * ``rocgraph_float_complex``
-    * ``rocgraph_double_complex``
-
-   So when adding a new routine to rocGRAPH that uses data/compute values test support of at least these four types.
+4. Tests must have good code coverage. 
 
 5. Ensure code builds successfully. This includes making sure that the code can compile, that the code is properly formatted, and that all tests pass.
 

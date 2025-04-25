@@ -11,9 +11,9 @@ if os.environ.get("READTHEDOCS", "") == "True":
     html_context["READTHEDOCS"] = True
 project = "ROCm for Data Science"
 
-version = "25.04"
+version = "25.05"
 release = version
-html_title = "ROCm-DS 25.04 Documentation"
+html_title = "ROCm-DS 25.05 Documentation"
 author = "Advanced Micro Devices, Inc."
 copyright = "Copyright (c) 2025 Advanced Micro Devices, Inc. All rights reserved."
 
