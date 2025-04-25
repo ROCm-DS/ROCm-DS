@@ -29,11 +29,11 @@ ROCm-DS documentation is organized into the following categories:
 
   .. grid-item-card:: Components
 
-    * `hipDF <https://rocm.docs.amd.com/projects/hipDF-internal/en/latest/>`_
-    * `hipMM <https://rocm.docs.amd.com/projects/hipMM-internal/en/latest/>`_
+    * `hipDF <https://rocm.docs.amd.com/projects/hipDF/en/latest/>`_
+    * `hipMM <https://rocm.docs.amd.com/projects/hipMM/en/latest/>`_
 
   .. grid-item-card:: Related Content
 
     * `Instinct docs <https://instinct.docs.amd.com/latest/>`_
-    * `ROCm-DS blogs <https://advanced-micro-devices-dcgpu-documentation--65.com.readthedocs.build/65/data-science/ROCmDS-Blogs.html>`_
+    * `ROCm-DS blogs <https://instinct.docs.amd.com/latest/data-science/ROCmDS-Blogs.html>`_
     * :ref:`contributing-to-rocm-ds`
