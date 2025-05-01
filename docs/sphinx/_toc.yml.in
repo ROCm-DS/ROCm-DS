@@ -22,8 +22,6 @@ subtrees:
   entries:
   - url: https://instinct.docs.amd.com/latest/
     title: Instinct docs
-  - url: https://instinct.docs.amd.com/latest/data-science/ROCmDS-Blogs.html
-    title: ROCm-DS blogs
   - file: contribute/contributing.rst
     title: Contributing to ROCm-DS
 

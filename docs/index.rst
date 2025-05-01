@@ -35,5 +35,4 @@ ROCm-DS documentation is organized into the following categories:
   .. grid-item-card:: Related Content
 
     * `Instinct docs <https://instinct.docs.amd.com/latest/>`_
-    * `ROCm-DS blogs <https://instinct.docs.amd.com/latest/data-science/ROCmDS-Blogs.html>`_
     * :ref:`contributing-to-rocm-ds`
