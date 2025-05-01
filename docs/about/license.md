@@ -26,10 +26,8 @@ licenses. Please review individual repositories for more information.
 <!-- spellcheck-disable -->
 | Component | License |
 |:---------------------|:-------------------------|
-| [hipDF](https://github.com/ROCm-DS/hipDF) | [Apache 2.0](https://github.com/ROCm/clr/blob/amd-staging/LICENCE) |
-| [hipMM](https://github.com/ROCm-DS/hipMM/) | [Apache 2.0](https://github.com/ROCm/aomp/blob/aomp-dev/LICENSE) |
-| [hipGRAPH](https://github.com/ROCm-DS/hipGRAPH) | [MIT](https://github.com/ROCm/amdsmi/blob/amd-staging/LICENSE) |
-| [rocGRAPH](https://github.com/ROCm-DS/rocGRAPH) | [MIT](https://github.com/ROCm/llvm-project/blob/amd-staging/amd/comgr/LICENSE.txt) |
+| [hipDF](https://github.com/ROCm-DS/hipDF) | [Apache 2.0](https://github.com/ROCm-DS/hipDF/blob/release/1.0.x/LICENSE) |
+| [hipMM](https://github.com/ROCm-DS/hipMM/) | [Apache 2.0](https://github.com/ROCm-DS/hipMM/blob/develop/LICENSE) |
 
 ```{note}
 The following additional terms and conditions apply to your use of ROCm-DS documentation.

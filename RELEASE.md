@@ -10,22 +10,22 @@
 <!-- markdownlint-disable reference-links-images            -->
 <!-- markdownlint-disable no-missing-space-atx              -->
 <!-- spellcheck-disable                                     -->
-# ROCm-DS 25.04 Release notes
+# ROCm-DS 25.05 Release notes
 
 We are excited to announce the early access release of ROCm-DS, a new software toolkit
 designed to accelerate data science workloads on selected AMD Instinct GPUs. This release serves
 as a preview of the capabilities that will be enabled by future ROCm-DS releases and is
 not intended for production workloads. Below, you'll find a detailed summary of the key
-highlights for ROCm-DS 25.04
+highlights for ROCm-DS 25.05
 
 - [ROCm-DS Release highlights](#release-highlights)
 - [ROCm-DS components](#rocm-ds-components)
 
 ## ROCm-DS release highlights
 
-ROCm-DS is a GPU-accelerated data science library, similar to the NVIDIA RAPIDS software collection. The early access release includes two libraries. hipDF is an accelerated dataframe library that enables large-scale data processing and manipulation, based on the RAPIDS cuDF library. hipGraph is an accelerated graph marshalling library which allows you to build, analyze, and manipulate complex graphs and networks, and is based on the RAPIDS cuGraph library.
+ROCm-DS is a GPU-accelerated data science library, similar to the NVIDIA RAPIDS software collection. The early access release includes the hipDF and hipMM libraries. hipDF is an accelerated dataframe library that enables large-scale data processing and manipulation, based on the RAPIDS cuDF library. 
 
-The 25.04 release is a  technology preview and is not intended for production workloads. The individual components are based on older versions of their RAPIDS counterparts and have not been fully optimized.
+The 25.05 release is a technology preview and is not intended for production workloads. The individual components are based on older versions of their RAPIDS counterparts and have not been fully optimized.
 
 ## ROCm-DS components
 
@@ -55,10 +55,6 @@ Click the component name to go to the component's source code on GitHub.
                 <td><a href="https://github.com/ROCm-DS/hipMM">hipMM</a></td>
                 <td>1.0.0b1</td>
             </tr>
-            <tr>
-                <td><a href="https://github.com/ROCm-DS/hipGRAPH">hipGraph</a></td>
-                <td>1.0.0b1</td>
-            </tr>
         </tbody>
     </table>
 </div>
@@ -85,24 +81,6 @@ hipDF v1.0.0b1 is based on cuDF 23.10 and includes the following features:
 
 For a full list of all available functionality, see the hipDF API documentation.
 
-### hipGRAPH
-
-hipGRAPH enables complex graphs or networks to be loaded and manipulated in GPU memory. This allows for the creation, analysis, and manipulation of these graphs using a number of well-known graph algorithms.
-hipGRAPH is a graph marshalling library that acts as a wrapper between an application and a worker graph library such as rocGRAPH. It includes both a Python and C++ API.
-
-hipGRAPH v1.0.0b1 is based on cuGraph 24.06 and contains the following features:
-
-* Well-known centrality functions to measure the importance of a node within a graph.
-* Identify and extract potential groups within a graph using a variety of community functions.
-* Identify highly connected subgraphs within the larger graph using the k-core function.
-* Label each node within a graph with either its weakly connected or strongly connected component ID.
-* Run a variety of random sampling algorithms on a graph to get a better understanding of the graph as a whole, or identify specific vertices or paths using one of a number of graph traversal algorithms.
-* Perform well-known similarity computations on a symmetric graph to intuitively identify related entities.
-
-For a full list of all available functionality, please see the hipGRAPH API documentation.
-
 ### hipMM
 
-hipMM (hip Memory Manager) enables the customization of device memory and is a key supporting library for both hipDF and hipGRAPH. Although hipMM is included in the early access release and installation instructions are provided, API documentation is not currently available. hipMM is based on the RAPIDS Memory Manager (RMM) library.
-
-Two versions of hipMM are included in the early access release, intended to support and enable operations in hipDF and hipGRAPH. For hipDF the hipMM version is equivalent to RMM 23.12. For hipGRAPH, the hipMM version is equivalent to RMM 24.06.
+hipMM (hip Memory Manager) enables the customization of device memory and is a key supporting library for hipDF. Although hipMM is included in the early access release and installation instructions are provided, API documentation is not currently available. hipMM is based on the RAPIDS Memory Manager (RMM) library.
