@@ -10,12 +10,6 @@ myst:
 ```{include} ../../LICENSE
 ```
 
-:::{note}
-The preceding license applies to the [ROCm-DS repository](https://github.com/ROCm-DS/ROCm-DS), which
-primarily contains documentation. For licenses related to specific ROCm-DS components, refer to the
-following section.
-:::
-
 ## ROCm-DS component licenses
 
 ROCm-DS is a fork of the RAPIDS Open Source project from NVIDIA, and is licensed
