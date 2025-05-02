@@ -12,10 +12,8 @@ AMD welcomes contributions from the community to ROCm-DS and its components. Whe
 documentation additions, performance notes, or other improvements, we value collaboration with our users. We can build
 better solutions together. Please follow these details to help ensure your contributions will be successfully accepted.
 
-.. 
-  Our code contribution guidelines closely follow the model of `GitHub pull-requests <https://help.github.com/articles/using-pull-requests/>`_.
-  This repository follows the `git-flow <http://nvie.com/posts/a-successful-git-branching-model/>`_ workflow, which dictates a ``/master`` branch
-  where releases are cut, and a ``/develop`` branch which serves as an integration branch for new code.
+Our code contribution guidelines closely follow the model of `GitHub pull-requests <https://help.github.com/articles/using-pull-requests/>`_. 
+Pull requests must be made against the ROCm-DS ``develop`` branch.
 
 Issue Discussion
 ================
