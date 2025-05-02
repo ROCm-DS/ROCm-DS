@@ -15,8 +15,6 @@ The ROCm Data Science toolkit (or ROCm-DS) is an open-source software collection
 
 The available libraries in ROCm-DS provide the tools to build a complete workflow for data science acceleration on AMD GPUs. hipDF enables you to create data frames and execute GPU-accelerated operations on them. It also includes the ability to accelerate many existing Pandas workflows with minimal effort and no code changes. The hipDF library (currently in early access) provides these capabilities for acceleration on AMD Instinct GPUs, with hipMM providing supporting functions for the memory management of these high-performance GPU-based applications. For information about installing hipDF or hipMM components, and required elements, see the Installation instructions for the components.
 
-ROCm-DS is open and hosted at `https://github.com/ROCm-DS <https://github.com/ROCm-DS>`_.
-
 ROCm-DS documentation is organized into the following categories:
 
 .. grid:: 2
