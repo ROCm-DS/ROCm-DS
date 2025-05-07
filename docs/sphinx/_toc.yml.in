@@ -17,7 +17,7 @@ subtrees:
     title: hipDF
   - url: https://rocm.docs.amd.com/projects/hipMM/en/latest/
     title: hipMM
-  - url: https://rocm.docs.amd.com/projects/hipGRAPH/en/latest/
+  - url: https://rocm.docs.amd.com/projects/hipGRAPH-internal/en/latest/
     title: hipGRAPH
 
 - caption: Related content
