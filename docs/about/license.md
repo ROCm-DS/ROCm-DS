@@ -22,6 +22,8 @@ licenses. Please review individual repositories for more information.
 |:---------------------|:-------------------------|
 | [hipDF](https://github.com/ROCm-DS/hipDF) | [Apache 2.0](https://github.com/ROCm-DS/hipDF/blob/release/1.0.x/LICENSE) |
 | [hipMM](https://github.com/ROCm-DS/hipMM/) | [Apache 2.0](https://github.com/ROCm-DS/hipMM/blob/develop/LICENSE) |
+| [hipGRAPH](https://github.com/ROCm-DS/hipGRAPH) | [MIT](https://github.com/ROCm-DS/hipGRAPH/blob/develop/LICENSE) |
+| [rocGRAPH](https://github.com/ROCm-DS/rocGRAPH) | [AMD](https://github.com/ROCm-DS/rocGRAPH/blob/develop/LICENSE.md) |
 
 ```{note}
 The following additional terms and conditions apply to your use of ROCm-DS documentation.
