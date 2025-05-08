@@ -17,11 +17,15 @@ subtrees:
     title: hipDF
   - url: https://rocm.docs.amd.com/projects/hipMM/en/latest/
     title: hipMM
+  - url: https://rocm.docs.amd.com/projects/hipGRAPH-internal/en/latest/
+    title: hipGRAPH
 
 - caption: Related content
   entries:
   - url: https://instinct.docs.amd.com/latest/
     title: Instinct docs
+  - url: https://instinct.docs.amd.com/latest/data-science/ROCmDS-Blogs.html
+    title: ROCm-DS blogs
   - file: contribute/contributing.rst
     title: Contributing to ROCm-DS
 

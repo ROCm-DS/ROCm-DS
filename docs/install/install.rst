@@ -12,3 +12,4 @@ In the Early Access (EA) release for ROCm-DS each component must be separately i
 
 * `hipDF Installation instructions <https://rocm.docs.amd.com/projects/hipDF/en/latest/install/INSTALL.html>`_
 * `hipMM Installation instructions <https://rocm.docs.amd.com/projects/hipMM/en/latest/install/INSTALL.html>`_
+* `hipGRAPH Installation instructions <https://rocm.docs.amd.com/projects/hipGRAPH-internal/en/latest/install/Linux_Install_Guide.html>`_
