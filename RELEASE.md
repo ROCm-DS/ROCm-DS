@@ -83,7 +83,7 @@ hipDF v1.0.0b1 is based on cuDF 23.10 and includes the following features:
 
 * hipDF supports a wide range of file formats for both input and output, allowing you to read data from various sources and save data to your preferred format. The supported formats are CSV, Text, JSON, Parquet, ORC, HDF5, Feather, and Avro.
 
-For a full list of all available functionality, see the hipDF API documentation.
+For a full list of all available functionality, see the [hipDF documentation](https://rocm.docs.amd.com/projects/hipDF/en/latest/index.html).
 
 ### hipGRAPH
 
@@ -99,7 +99,7 @@ hipGRAPH v1.0.0b1 is based on cuGraph 24.06 and contains the following features:
 * Run a variety of random sampling algorithms on a graph to get a better understanding of the graph as a whole, or identify specific vertices or paths using one of a number of graph traversal algorithms.
 * Perform well-known similarity computations on a symmetric graph to intuitively identify related entities.
 
-For a full list of all available functionality, please see the hipGRAPH API documentation.
+For a full list of all available functionality, please see the [hipGRAPH documentation](https://rocm.docs.amd.com/projects/hipGRAPH/en/latest/index.html).
 
 ### hipMM
 
