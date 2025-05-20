@@ -13,7 +13,7 @@ documentation additions, performance notes, or other improvements, we value coll
 better solutions together. Please follow these details to help ensure your contributions will be successfully accepted.
 
 Our code contribution guidelines closely follow the model of `GitHub pull-requests <https://help.github.com/articles/using-pull-requests/>`_. 
-Pull requests should be made against the ``develop`` branch in the ROCm-DS components' repositories -- `<https://github.com/ROCm-DS/hipMM>`__ and `<https://github.com/ROCm-DS/hipDF>`__.
+Pull requests should be made against the ``develop`` branch in the ROCm-DS components.
 
 Issue Discussion
 ================

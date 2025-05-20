@@ -16,14 +16,14 @@ We are excited to announce the early access release of ROCm-DS, a new software t
 designed to accelerate data science workloads on selected AMD Instinct GPUs. This release serves
 as a preview of the capabilities that will be enabled by future ROCm-DS releases and is
 not intended for production workloads. Below, you'll find a detailed summary of the key
-highlights for ROCm-DS 25.05
+highlights for ROCm-DS 25.05.
 
 - [ROCm-DS Release highlights](#release-highlights)
 - [ROCm-DS components](#rocm-ds-components)
 
 ## ROCm-DS release highlights
 
-ROCm-DS is a GPU-accelerated data science library, similar to the NVIDIA RAPIDS software collection. The early access release includes the hipDF and hipMM libraries. hipDF is an accelerated dataframe library that enables large-scale data processing and manipulation, based on the RAPIDS cuDF library. 
+ROCm-DS is a GPU-accelerated data science library, similar to the NVIDIA RAPIDS software collection. The early access release includes two libraries. hipDF is an accelerated DataFrame library that enables large-scale data processing and manipulation, based on the RAPIDS cuDF library. hipGraph is an accelerated graph marshalling library which allows you to build, analyze, and manipulate complex graphs and networks, and is based on the RAPIDS cuGraph library.
 
 The 25.05 release is a technology preview and is not intended for production workloads. The individual components are based on older versions of their RAPIDS counterparts and have not been fully optimized.
 
@@ -55,19 +55,23 @@ Click the component name to go to the component's source code on GitHub.
                 <td><a href="https://github.com/ROCm-DS/hipMM">hipMM</a></td>
                 <td>1.0.0b1</td>
             </tr>
+            <tr>
+                <td><a href="https://github.com/ROCm-DS/hipGRAPH">hipGRAPH</a></td>
+                <td>1.0.0b1</td>
+            </tr>
         </tbody>
     </table>
 </div>
 
 ### hipDF
 
-hipDF enables GPU accelerated dataframes based on the Apache Arrow columnar memory format. Its API is similar to that of Pandas, enabling GPU accelerated data processing with a familiar API. This library enables large scale data processing on AMD Instinct GPUs, enabling data manipulation tasks such as loading, joining, aggregating, and filtering to be performed on data in GPU memory.
+hipDF enables GPU accelerated DataFrames based on the Apache Arrow columnar memory format. Its API is similar to that of Pandas, enabling GPU accelerated data processing with a familiar API. This library enables large scale data processing on AMD Instinct GPUs, enabling data manipulation tasks such as loading, joining, aggregating, and filtering to be performed on data in GPU memory.
 hipDF offers both a Python and C++ API, allowing for a wide range of uses. Despite being named hipDF, this library is API compatible with the NVIDIA cuDF library, allowing for workloads to be transitioned to AMD devices without the need for hipification. Although there are plans to expand in future updates, the early access release only includes the hipDF namespace for the Python API.
 
 hipDF v1.0.0b1 is based on cuDF 23.10 and includes the following features:
 
-* hipDF offers the Series and Dataframe data structures that can be used to store and manipulate data directly on the GPU. The Series data structure acts as a one-dimensional array, while the dataframe acts as a two-dimensional array with rows and columns. These data structures are similar to those present in the widely used Pandas library, and include similar methods to their Pandas counterparts allowing you to perform basic operations on the data structures and data within.
-* In addition to the data structure methods, more functionality is included to analyze and manipulate the data frames and data within them. This functionality includes:
+* hipDF offers the Series and DataFrame data structures that can be used to store and manipulate data directly on the GPU. The Series data structure acts as a one-dimensional array, while the DataFrame acts as a two-dimensional array with rows and columns. These data structures are similar to those present in the widely used Pandas library, and include similar methods to their Pandas counterparts allowing you to perform basic operations on the data structures and data within.
+* In addition to the data structure methods, more functionality is included to analyze and manipulate the DataFrames and data within them. This functionality includes:
 
   - Group data together and perform additional operations on data within the groups.
   - Perform statistical operations on windows within the data.
@@ -79,7 +83,23 @@ hipDF v1.0.0b1 is based on cuDF 23.10 and includes the following features:
 
 * hipDF supports a wide range of file formats for both input and output, allowing you to read data from various sources and save data to your preferred format. The supported formats are CSV, Text, JSON, Parquet, ORC, HDF5, Feather, and Avro.
 
-For a full list of all available functionality, see the hipDF API documentation.
+For a full list of all available functionality, see the [hipDF documentation](https://rocm.docs.amd.com/projects/hipDF/en/latest/index.html).
+
+### hipGRAPH
+
+hipGRAPH enables complex graphs or networks to be loaded and manipulated in GPU memory. This allows for the creation, analysis, and manipulation of these graphs using a number of well-known graph algorithms.
+hipGRAPH is a graph marshalling library that acts as a wrapper between an application and a worker graph library such as rocGRAPH. It includes both a Python and C++ API.
+
+hipGRAPH v1.0.0b1 is based on cuGraph 24.06 and contains the following features:
+
+* Well-known centrality functions to measure the importance of a node within a graph.
+* Identify and extract potential groups within a graph using a variety of community functions.
+* Identify highly connected subgraphs within the larger graph using the k-core function.
+* Label each node within a graph with either its weakly connected or strongly connected component ID.
+* Run a variety of random sampling algorithms on a graph to get a better understanding of the graph as a whole, or identify specific vertices or paths using one of a number of graph traversal algorithms.
+* Perform well-known similarity computations on a symmetric graph to intuitively identify related entities.
+
+For a full list of all available functionality, please see the [hipGRAPH documentation](https://rocm.docs.amd.com/projects/hipGRAPH/en/latest/index.html).
 
 ### hipMM
 

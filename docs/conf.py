@@ -13,14 +13,14 @@ project = "ROCm for Data Science"
 
 version = "25.05"
 release = version
-html_title = "ROCm-DS 25.05 Documentation"
+html_title = "ROCm-DS 25.05 documentation"
 author = "Advanced Micro Devices, Inc."
 copyright = "Copyright (c) 2025 Advanced Micro Devices, Inc. All rights reserved."
 setting_all_article_info = True
 all_article_info_os = ["linux"]
 all_article_info_author = ""
 
-#left_nav_title = f"ROCm-DS {version} Documentation"
+#left_nav_title = f"ROCm-DS {version} documentation"
 
 # Required settings
 html_theme = "rocm_docs_theme"
